@@ -1,0 +1,46 @@
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text"
+            class="form-control"
+            placeholder="search by Name"
+            [(ngModel)] = "username" />
+        </div>
+        <div class="input-group-append">
+            <button 
+            class="btn btn-outline-secondary"> Search
+        </button>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+<h4> Users List</h4>
+<ul class="list-group">
+<li class="list-group-item" *ngFor="let u of users;let i=index" 
+[class.active]="i==currentIndex"
+(click) = "setActiveUser(u,i)"
+>
+{{u.username}}    
+</li>
+</ul>
+
+<div class="jumbotron-fluid">
+<div class="col-md-6">
+<div *ngIf= "selectedUser.id">
+    <h4> User Detail</h4>
+    <div>
+        <label><b>Name: </b></label>{{selectedUser.username}}
+    </div>
+    <div>
+        <label><b>Age: </b></label>{{selectedUser.userage}}
+    </div>
+    <div>
+        <label><b>Adult</b></label>
+        <input type="checkbox" readonly [checked]="selectedUser.isAdult">
+    </div>
+    <br/>
+    <a class="btn btn-warning" routerLink="/users/{{selectedUser.id}}">Update User</a>
+</div>
+</div>
+</div>
+</div>
