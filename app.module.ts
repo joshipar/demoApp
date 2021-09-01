@@ -20,6 +20,7 @@ import { ChildCounterComponent } from './child-component-counter';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { GrosssalPipe } from './grosssal.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { UserListComponent } from './components/user-list/user-list.component';
     ChildCounterComponent,
     AddUsersComponent,
     UserDetailsComponent,
-    UserListComponent
+    UserListComponent,
+    GrosssalPipe
   ],
   imports: [
     BrowserModule,

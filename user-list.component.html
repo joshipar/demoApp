@@ -8,7 +8,9 @@
         </div>
         <div class="input-group-append">
             <button 
-            class="btn btn-outline-secondary"> Search
+            class="btn btn-outline-secondary"
+            (click) = "searchByName()"
+            > Search
         </button>
         </div>
     </div>
@@ -23,7 +25,10 @@
 {{u.username}}    
 </li>
 </ul>
-
+<!-- <div style="margin-top:5px;">
+    <button class="btn btn-danger" (click) = removeAllUsers()>Remove All </button>
+</div> -->
+</div>
 <div class="jumbotron-fluid">
 <div class="col-md-6">
 <div *ngIf= "selectedUser.id">
@@ -41,6 +46,10 @@
     <br/>
     <a class="btn btn-warning" routerLink="/users/{{selectedUser.id}}">Update User</a>
 </div>
+<div *ngIf="!selectedUser">
+<br/>
+<p>Please click the User .....</p>
 </div>
 </div>
 </div>
+

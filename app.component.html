@@ -1,9 +1,11 @@
-
 <div>
   <app-header></app-header>
   <br/>
-  <br/> 
-  <!-- <app-menu></app-menu>
+  <br/>
+   <p class="bg-primary text-white" style="font-size: 20px;">
+     Today's Date is {{today | date:'YYYY/MM/dd'}}
+   </p>
+  <!-- <app-menu>/app-menu>
   <app-customer> </app-customer> -->
   <!-- <nav>
     <a routerLink="/dashboard" class="btn btn-primary">Dashboard</a> &nbsp;&nbsp;&nbsp;
@@ -37,3 +39,16 @@
 <!-- <app-auditlog></app-auditlog> -->
 <!-- 
 <app-counter></app-counter> -->
+
+<h2>Angular Pipes</h2>
+Netsalary for basic {{basicsalary}} is {{basicsalary | grosssal}}
+<p>{{amount | number: '5.3-3' }}</p>
+<p>{{amount | currency : "INR" }}</p>
+<p>{{amount | currency : "USD"}}</p>
+<p>{{amount | currency : "EUR"}}</p>
+<p>Percentage : {{price | percent}}</p>
+<p>Greet : {{value | slice : 0 : 4 | uppercase}}</p>
+<p> {{"lucky Winners"| titlecase}} </p>
+<ul>
+  <li *ngFor="let value of lucky_winners | slice: 1:3">{{value | lowercase}}</li>
+</ul>
