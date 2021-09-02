@@ -21,6 +21,10 @@ import { AddUsersComponent } from './components/add-users/add-users.component';
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { GrosssalPipe } from './grosssal.pipe';
+import { FeedbackformComponent } from './feedbackform/feedbackform.component';
+import { FeedbacklistComponent } from './feedbacklist/feedbacklist.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,11 @@ import { GrosssalPipe } from './grosssal.pipe';
     AddUsersComponent,
     UserDetailsComponent,
     UserListComponent,
-    GrosssalPipe
+    GrosssalPipe,
+    FeedbackformComponent,
+    FeedbacklistComponent,
+    FeedbackComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

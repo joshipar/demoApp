@@ -29,6 +29,9 @@
       <li class="nav-item">
         <a routerLink = "addUser" class="nav-link">Add User</a>
       </li>
+      <li class="nav-item">
+        <a routerLink = "feedback" class="nav-link">Feedback</a>
+      </li>
     </div>
     </nav>
 </div>
@@ -36,10 +39,11 @@
 <div class="container mt-3">
 <router-outlet></router-outlet>
 </div>
+
 <!-- <app-auditlog></app-auditlog> -->
 <!-- 
 <app-counter></app-counter> -->
-
+<!-- 
 <h2>Angular Pipes</h2>
 Netsalary for basic {{basicsalary}} is {{basicsalary | grosssal}}
 <p>{{amount | number: '5.3-3' }}</p>
@@ -51,4 +55,4 @@ Netsalary for basic {{basicsalary}} is {{basicsalary | grosssal}}
 <p> {{"lucky Winners"| titlecase}} </p>
 <ul>
   <li *ngFor="let value of lucky_winners | slice: 1:3">{{value | lowercase}}</li>
-</ul>
+</ul> -->

@@ -7,8 +7,12 @@ import { CustomerComponent } from './customer/customer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmpDetailsComponent } from './emp-details/emp-details.component';
 import { EmpComponent } from './emp/emp.component';
+import { FeedbackformComponent } from './feedbackform/feedbackform.component';
+import { FeedbacklistComponent } from './feedbacklist/feedbacklist.component';
 import { MenuComponent } from './menu/menu.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ProductComponent } from './product/product.component';
+import { ProductsresolverService } from './productsresolver.service';
 
 const routes: Routes = [
   {path : '',redirectTo:'/dashboard',pathMatch:'full'},
@@ -20,6 +24,8 @@ const routes: Routes = [
   {path:'users',component:UserListComponent},
   {path:'users/:id',component:UserDetailsComponent},
   {path:'addUser',component:AddUsersComponent},
+  {path:'feedback',component:FeedbacklistComponent},
+  {path:'products',component:ProductComponent, resolve:{products:ProductsresolverService}},
   {path:"**", component:PagenotfoundComponent}
 ];
 

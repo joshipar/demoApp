@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div *ngFor="let p of products" class="card">
+        <img [src]="p.image"/>
+        <h3> {{p.title}}</h3>
+        <p> Price = {{p.price | currency}}</p>
+        <p>{{p.description}}</p>
+    </div>
+    
+</div>

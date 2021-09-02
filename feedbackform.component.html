@@ -1,0 +1,22 @@
+<div class = "card card-block">
+    <h4 class="card-title">Create Your Feedback</h4>
+    <div class="form-group">
+        <input type="text" 
+        class="form-control"
+        placeholder="Enter the question"
+        #question
+        />
+    </div>
+    <div class="form-group">
+        <input type="text" 
+        class="form-control"
+        placeholder="Enter the answer"
+        #answer
+        />
+    </div>
+    <button type="button" class="btn btn-success" (click)="createFeedback(question.value,answer.value)">
+        Create Feedback
+    </button>
+</div>
+<hr/>
+
