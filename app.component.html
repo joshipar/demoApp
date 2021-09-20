@@ -24,6 +24,10 @@
     <a href="#" class="navbar-brand"> ACI Worldwide </a>
     <div class="navbar-nav mr-auto">
       <li class="nav-item"> 
+        <a routerLink = "/home" class="nav-link">Home</a>
+      </li>
+
+      <li class="nav-item"> 
         <a routerLink = "users" class="nav-link">User List</a>
       </li>
       <li class="nav-item">
@@ -34,6 +38,23 @@
       </li>
     </div>
     </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <a class="navbar-brand brand-custom" href="#"> Person Navigation </a>
+      <div class="collapse navbar-collapse" id = "navbarText">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link login-custom" routerLink="/person/list">Person List<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link login-custom" routerLink="/person/details">Person Details<span class="sr-only">(current)</span></a>
+            </li>
+              <li class="nav-item">
+                  <a class="nav-link login-custom" routerLink="/home">Home</a>
+              </li>
+          </ul>
+      
+      </div>
+      </nav>
 </div>
 
 <div class="container mt-3">
