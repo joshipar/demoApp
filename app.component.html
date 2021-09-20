@@ -1,79 +1,11 @@
-<div>
-  <app-header></app-header>
-  <br/>
-  <br/>
-   <p class="bg-primary text-white" style="font-size: 20px;">
-     Today's Date is {{today | date:'YYYY/MM/dd'}}
-   </p>
-  <!-- <app-menu>/app-menu>
-  <app-customer> </app-customer> -->
-  <!-- <nav>
-    <a routerLink="/dashboard" class="btn btn-primary">Dashboard</a> &nbsp;&nbsp;&nbsp;
-    <a routerLink ="/employees" class="btn btn-primary">Show Employees</a>  &nbsp;&nbsp;&nbsp;
-    <a routerLink ="/customer" class="btn btn-primary">Show Customer</a> &nbsp;&nbsp;&nbsp;
-    <a routerLink ="/users" class="btn btn-primary">Users</a> 
-    <a routerLink ="/users" class="btn btn-primary">Users</a> -->
-    <!-- <a routerLink ="/employeesdetails" class="btn btn-primary">Show Employees</a>  -->
-  <!-- </nav>
-  
-</div>
-<br/> --> 
-
-<div>
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a href="#" class="navbar-brand"> ACI Worldwide </a>
-    <div class="navbar-nav mr-auto">
-      <li class="nav-item"> 
-        <a routerLink = "/home" class="nav-link">Home</a>
-      </li>
-
-      <li class="nav-item"> 
-        <a routerLink = "users" class="nav-link">User List</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink = "addUser" class="nav-link">Add User</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink = "feedback" class="nav-link">Feedback</a>
-      </li>
-    </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-      <a class="navbar-brand brand-custom" href="#"> Person Navigation </a>
-      <div class="collapse navbar-collapse" id = "navbarText">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link login-custom" routerLink="/person/list">Person List<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link login-custom" routerLink="/person/details">Person Details<span class="sr-only">(current)</span></a>
-            </li>
-              <li class="nav-item">
-                  <a class="nav-link login-custom" routerLink="/home">Home</a>
-              </li>
-          </ul>
-      
-      </div>
-      </nav>
-</div>
-
-<div class="container mt-3">
-<router-outlet></router-outlet>
-</div>
-
-<!-- <app-auditlog></app-auditlog> -->
-<!-- 
-<app-counter></app-counter> -->
-<!-- 
-<h2>Angular Pipes</h2>
-Netsalary for basic {{basicsalary}} is {{basicsalary | grosssal}}
-<p>{{amount | number: '5.3-3' }}</p>
-<p>{{amount | currency : "INR" }}</p>
-<p>{{amount | currency : "USD"}}</p>
-<p>{{amount | currency : "EUR"}}</p>
-<p>Percentage : {{price | percent}}</p>
-<p>Greet : {{value | slice : 0 : 4 | uppercase}}</p>
-<p> {{"lucky Winners"| titlecase}} </p>
-<ul>
-  <li *ngFor="let value of lucky_winners | slice: 1:3">{{value | lowercase}}</li>
-</ul> -->
+<!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<button mat-raised-button>Basic</button>
+<button mat-button color="warn">Warn</button>
+<br/>
+<br/> -->
+<!-- <app-viewchildren1></app-viewchildren1> -->
+ <!-- <app-viewchildren2></app-viewchildren2>  -->
+ <alert></alert>
+ <alert type="danger"></alert>
+ <alert type="info"></alert>
+ 
